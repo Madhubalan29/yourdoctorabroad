@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="light" name="color-scheme"/>
+<title>Payment Links (Internal) — Your Doctor Abroad</title>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css?v=9" rel="stylesheet"/>
+<link href="favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="YDA Tourist Doctors" property="og:site_name"/>
+</head>
+<body>
+<header>
+<nav class="wrap" style="justify-content:center;">
+<a "="" aria-label="Your Doctor Abroad — home" class="brand-logo" href="/">
+<svg viewbox="0 0 560 100" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#6E1E2E" height="94" rx="26" width="94" x="3" y="3"></rect>
+<circle cx="50" cy="38" fill="#FFFFFF" r="24"></circle>
+<polygon fill="#FFFFFF" points="31,49 69,49 50,90"></polygon>
+<rect fill="#D64545" height="28" rx="2" width="12" x="44" y="24"></rect>
+<rect fill="#D64545" height="12" rx="2" width="28" x="36" y="32"></rect>
+<circle cx="78" cy="78" fill="#6E1E2E" r="12"></circle>
+<circle cx="78" cy="78" fill="#FFFFFF" r="9"></circle>
+<circle cx="78" cy="78" fill="#3D6B8A" r="6"></circle>
+<text fill="#3D6B8A" font-family="Sora, sans-serif" font-size="42" font-weight="600" letter-spacing="-0.5" x="122" y="63">yourdoctor<tspan fill="#B08D2F">abroad</tspan></text>
+</svg>
+</a>
+</nav>
+</header>
+<section class="section" style="padding-top: 64px; padding-bottom: 0;">
+<div class="wrap" style="max-width: 780px;">
+<div class="section-head">
+<div class="eyebrow"><span class="dot"></span>Internal use only</div>
+<h2 style="font-size: clamp(1.7rem, 4vw, 2.3rem);">Stripe payment links by amount</h2>
+<p>This page is not linked anywhere on the site — keep this URL private. Copy the right link and paste it into WhatsApp when confirming a patient's consultation price.</p>
+</div>
+</div>
+</section>
+<section class="section" style="padding-top: 0;">
+<div class="wrap" style="max-width: 780px;">
+<table class="pl-table">
+<thead>
+<tr><th>Amount</th><th>Stripe link</th><th></th></tr>
+</thead>
+<tbody>
+<tr>
+<td>€15</td>
+<td><a class="pl-link" href="https://buy.stripe.com/aFa14n8pm9RMev21lV1RC00" rel="noopener" target="_blank">https://buy.stripe.com/aFa14n8pm9RMev21lV1RC00</a></td>
+<td><button class="pl-copy-btn" data-link="https://buy.stripe.com/aFa14n8pm9RMev21lV1RC00">Copy</button></td>
+</tr>
+<tr>
+<td>€20</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€25</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€30</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€35</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€40</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€45</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€50</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€55</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€60</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€65</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€70</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+<tr>
+<td>€75</td>
+<td class="pl-pending">Not added yet</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p style="margin-top:20px; font-size:0.85rem; color: var(--ink-soft);">To add more links: send me each Stripe payment link with its amount, and I'll add it here.</p>
+</div>
+</section>
+<footer>
+<div class="wrap" style="flex-direction: column; align-items: flex-start; gap: 6px;">
+<div style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:12px;">
+<div class="brand">yourdoctor<span>abroad</span></div>
+<div>© 2026 Your Doctor Abroad.</div>
+</div>
+</div>
+</footer>
+<script>
+  document.querySelectorAll('.pl-copy-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      navigator.clipboard.writeText(btn.dataset.link).then(function(){
+        var original = btn.textContent;
+        btn.textContent = 'Copied!';
+        setTimeout(function(){ btn.textContent = original; }, 1500);
+      });
+    });
+  });
+</script>
+</body>
+</html>
