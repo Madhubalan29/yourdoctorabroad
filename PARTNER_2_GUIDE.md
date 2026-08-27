@@ -35,20 +35,23 @@ Setting up and running the website's physical "house and address" on the interne
 * If backups are missing, a server crash or corrupted edit could erase the entire business overnight.
 * If redirects/canonicals are missing, search engines get confused by `http://`, `https://`, `www.`, and non-`www.` versions of the same site, splitting your search ranking power.
 
-### How It Is Solved in Practice:
-1. **Hosting & Deployment**: The site files live on Hostinger (Apache/LiteSpeed web server). You deploy updates via Git or Hostinger File Manager/FTP.
-2. **DNS & SSL**: Ensure `A Records` point to Hostinger IP, `MX Records` handle professional emails, and Free Let's Encrypt SSL is set to **Auto-Renew**.
-3. **HTTP to HTTPS & WWW Redirects**: Force all traffic to secure HTTPS and unified domain format (`https://yourdoctorabroad.com/`).
-4. **Canonical URLs**: Every single HTML page has `<link rel="canonical" href="https://yourdoctorabroad.com/page.html">` to tell Google this is the master copy.
-5. **Crawl Directives (`robots.txt` & `sitemap.xml`)**:
-   * `robots.txt` tells Google: "You are allowed to crawl everything except private admin pages."
-   * `sitemap.xml` lists all 34 public pages with their last updated dates.
-6. **Automated Backups**: Turn on daily/weekly automated backups inside Hostinger cPanel and keep a local Git repo on GitHub.
+### Current Status:
+✅ **Initial Launch is Already Complete**: The site is already live and running on Hostinger.
 
-### Current Status on Site:
-* Hosted on Hostinger.
-* `robots.txt` and `sitemap.xml` are active.
-* GitHub repository connected.
+### What "Launch & Infrastructure" Means For You Now (Ongoing Maintenance):
+Since the site is already live, your ongoing infrastructure tasks on Hostinger are:
+
+1. **Pushing Code Updates to the Live Site (Deployment)**:
+   * Whenever you or your developer create new blog posts, optimize images, or update SEO tags in Git, you need to push those updated files to Hostinger so live visitors can see them.
+   * *Methods*: Hostinger Git integration (auto-pull on `git push`), Hostinger File Manager upload, or FTP/SFTP (FileZilla).
+2. **Verifying Hostinger Automated Backups**:
+   * In Hostinger hPanel > **Files > Backups**, ensure daily or weekly automated backups are active. If an edit ever goes wrong, you can roll back to yesterday's version with a single click.
+3. **SSL Certificate Health**:
+   * Hostinger's Let's Encrypt SSL auto-renews every 90 days. You just need to check once a month in Hostinger hPanel > **Security > SSL** that the status is green (*"Active"*).
+4. **Redirects & Canonical URLs**:
+   * Maintain the `.htaccess` / `_headers` rules on Hostinger so that any visitor typing `http://` or `www.` gets redirected automatically to `https://yourdoctorabroad.com/`.
+5. **Production Sitemap & Robots.txt**:
+   * Whenever a new city page or blog post is published, ensure the updated `sitemap.xml` is live on Hostinger so Google finds it immediately.
 
 ---
 
