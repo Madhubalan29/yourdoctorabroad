@@ -3,9 +3,9 @@
 ## Project: Your Doctor Abroad (yourdoctorabroad.com)
 The user is **Partner 2** (Technical, Website & SEO Partner) in a 3-partner team for a live telehealth site based in Italy.
 
-### Core Context & Master Files:
-* Refer to `PROJECT_CONTEXT.md` for full project history, completed tasks, and pending items.
-* Refer to `PARTNER_2_GUIDE.md` for the operational partner handbook.
+### Core Context & Master Files (in docs/):
+* Refer to [PROJECT_CONTEXT.md](file:///e:/yourdoctorabroad-site/docs/PROJECT_CONTEXT.md) for full project history, completed tasks, and pending items.
+* Refer to [PARTNER_2_GUIDE.md](file:///e:/yourdoctorabroad-site/docs/PARTNER_2_GUIDE.md) for the operational partner handbook.
 
 ### Key Technical Specs:
 * **Tech Stack**: Static HTML5, Vanilla CSS (`styles.css`), Vanilla JS (`analytics.js`).
