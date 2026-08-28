@@ -263,7 +263,7 @@ Traffic without bookings is useless. High drop-off rates usually happen because:
 ### How It Is Solved in Practice:
 1. **Trust Badges & Proof**:
    * Prominently display Dr. Tayyab Altaf's verified credentials (Pavia University, Italian Medical License, English fluency).
-   * Clear pricing: transparent €10 / €25 / €35 consultation pricing with no hidden charges.
+   * Clear pricing: transparent €15 / €25 / €35 consultation pricing with no hidden charges.
 2. **Sticky Mobile CTAs**:
    * Ensure a floating "Chat with Doctor on WhatsApp" or "Book Consultation" button is easily reachable on mobile screens.
 3. **Frictionless Forms**:
