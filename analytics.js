@@ -8,9 +8,9 @@
 
   // =========================================================================
   // 1. CONFIGURATION
-  // Replace 'G-XXXXXXXXXX' with your real Google Analytics 4 Measurement ID
+  // Google Analytics 4 Measurement ID
   // =========================================================================
-  const GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || 'G-XXXXXXXXXX';
+  const GA_MEASUREMENT_ID = window.GA_MEASUREMENT_ID || 'G-Y60G81T4XQ';
 
   // Load Google Analytics gtag.js only if a valid ID is provided or in production
   if (GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== 'G-XXXXXXXXXX') {
